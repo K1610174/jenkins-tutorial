@@ -3,11 +3,11 @@ pipeline{
         stages{
             stage('Clone repo'){
                 steps{
-                    def exists = fileExists './chaperootodo_client'
+                        def exists = fileExists './chaperootodo_client
                         if (exists) {
-                            println "File already exists"
+                                println "File already exists"
                         } else {
-                            sh "git clone https://gitlab.com/qacdevops/chaperootodo_client.git"
+                                sh "git clone https://gitlab.com/qacdevops/chaperootodo_client.git"
                         }
                 }
             }
